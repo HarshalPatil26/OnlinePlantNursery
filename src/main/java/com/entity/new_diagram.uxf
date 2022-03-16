@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>3</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>0</y>
+      <w>246</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>com.entity::CartP
+--
+-cartId: int
+-gardendecor: GardenDecor
+-planter: Planter
+-fertilizer: Fertilizer
+-p: Plant
+-s: Seed
+-customerreg: CustomerReg
+--
++CartP(): ctor
++CartP(int cartId, GardenDecor gardendecor, Planter planter, Fertilizer fertilizer, Plant p, Seed s, CustomerReg customerreg): ctor
++toString(): String
++getGardendecor(): GardenDecor
++setGardendecor(GardenDecor gardendecor): void
++getPlanter(): Planter
++setPlanter(Planter planter): void
++getFertilizer(): Fertilizer
++setFertilizer(Fertilizer fertilizer): void
++getS(): Seed
++setS(Seed s): void
++getCartId(): int
++setCartId(int cartId): void
++getCustomerreg(): CustomerReg
++getP(): Plant
++setP(Plant p): void
++setCustomerreg(CustomerReg customerreg): void
++total(): double
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>642</x>
+      <y>24</y>
+      <w>258</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>com.entity::CustomerReg
+--
+-customerId: int
+-customerName: String
+-customerEmail: String
+-customerPhone: String
+-password: String
+--
++CustomerReg(): ctor
++CustomerReg(int customerId, String customerName, String customerEmail, String customerPhone, String password, CartP cartp): ctor
++getCustomerId(): int
++setCustomerId(int customerId): void
++getCustomerName(): String
++setCustomerName(String customerName): void
++getCustomerEmail(): String
++setCustomerEmail(String customerEmail): void
++getCustomerPhone(): String
++setCustomerPhone(String customerPhone): void
++getPassword(): String
++setPassword(String password): void
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>330</x>
+      <y>195</y>
+      <w>213</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>com.entity::Planter
+--
+-planterid: int
+-planterName: String
+-planterColor: String
++planterPrice: double
++planterQuantity: double
+--
++Planter(): ctor
++Planter(int planterid, String planterName, String planterColor, double planterPrice, double planterQuantity): ctor
++getPlanterColor(): String
++setPlanterColor(String planterColor): void
++getPlanterPrice(): double
++setPlanterPrice(double planterPrice): void
++getPlanterid(): int
++setPlanterid(int planterid): void
++getPlanterName(): String
++setPlanterName(String planterName): void
++getPlanterQuantity(): double
++setPlanterQuantity(double planterQuantity): void
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>642</x>
+      <y>198</y>
+      <w>204</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>com.entity::Seed
+--
+-seedId: int
+-seedName: String
++seedQuantity: double
+-seedDescription: String
++seedPrice: double
+--
++Seed(): ctor
++Seed(int seedId, String seedName, double seedQuantity, String seedDescription, double seedPrice): ctor
++getSeedPrice(): double
++setSeedPrice(double seedPrice): void
++getSeedId(): int
++setSeedId(int seedId): void
++getSeedName(): String
++setSeedName(String seedName): void
++getSeedQuantity(): double
++setSeedQuantity(double seedQuantity): void
++getSeedDescription(): String
++setSeedDescription(String seedDescription): void
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>354</x>
+      <y>366</y>
+      <w>180</w>
+      <h>93</h>
+    </coordinates>
+    <panel_attributes>com.entity::GardenDecor
+--
+-decorId: int
+-decorName: String
++decorPrice: double
++decorQuantity: double
+--
++GardenDecor(): ctor
++GardenDecor(int decorId, String decorName, double decorPrice, double decorQuantity): ctor
++getDecorPrice(): double
++setDecorPrice(double decorPrice): void
++getDecorId(): int
++setDecorId(int decorId): void
++getDecorName(): String
++setDecorName(String decorName): void
++getDecorQuantity(): double
++setDecorQuantity(double decorQuantity): void
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>339</x>
+      <y>9</y>
+      <w>237</w>
+      <h>123</h>
+    </coordinates>
+    <panel_attributes>com.entity::Plant
+--
+-plantId: int
+-plantName: String
+-plantType: String
++plantPrice: double
+-plantDescription: String
++plantQuantity: double
+--
++Plant(): ctor
++Plant(int plantId, String plantName, String plantType, double plantPrice, String plantDescription, double plantQuantity): ctor
++getPlantId(): int
++setPlantId(int plantId): void
++getPlantName(): String
++setPlantName(String plantName): void
++getPlantType(): String
++setPlantType(String plantType): void
++getPlantPrice(): double
++setPlantPrice(double plantPrice): void
++getPlantDescription(): String
++setPlantDescription(String plantDescription): void
++getPlantQuantity(): double
++setPlantQuantity(double plantQuantity): void
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>42</x>
+      <y>192</y>
+      <w>237</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>com.entity::Fertilizer
+--
+-fertilizerId: int
+-fertilizerName: String
++fertilizerPrice: double
+-fertilizerDescription: String
++fertilizerQuantity: double
+--
++Fertilizer(): ctor
++Fertilizer(int fertilizerId, String fertilizerName, double fertilizerPrice, String fertilizerDescription, double fertilizerQuantity): ctor
++getFertilizerId(): int
++setFertilizerId(int fertilizerId): void
++getFertilizerName(): String
++setFertilizerName(String fertilizerName): void
++getFertilizerPrice(): double
++setFertilizerPrice(double fertilizerPrice): void
++getFertilizerDescription(): String
++setFertilizerDescription(String fertilizerDescription): void
++getFertilizerQuantity(): double
++setFertilizerQuantity(double fertilizerQuantity): void
++toString(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

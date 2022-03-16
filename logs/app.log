@@ -1,0 +1,210 @@
+2022-03-16 00:05:51,681 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(19)-127.0.0.1] Application shutdown requested.
+2022-03-16 00:05:51,736 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(19)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-16 00:05:51,739 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(19)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-03-16 00:05:51,748 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(19)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-03-16 00:58:56,160 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.2.Final
+2022-03-16 00:58:56,164 INFO com.OnlinePlantNurseryApplication [main] Starting OnlinePlantNurseryApplication using Java 17.0.1 on INLEN8520027119 with PID 20736 (C:\Users\HPATIL9\Downloads\OnlinePlantNursery\target\classes started by hpatil9 in C:\Users\HPATIL9\Downloads\OnlinePlantNursery)
+2022-03-16 00:58:56,165 INFO com.OnlinePlantNurseryApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-03-16 00:58:58,348 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-16 00:58:58,651 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 286 ms. Found 7 JPA repository interfaces.
+2022-03-16 00:58:59,605 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9090 (http)
+2022-03-16 00:58:59,623 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-9090"]
+2022-03-16 00:58:59,624 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-03-16 00:58:59,624 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-16 00:58:59,829 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-03-16 00:58:59,830 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3593 ms
+2022-03-16 00:59:00,136 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-16 00:59:00,236 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-16 00:59:00,544 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-16 00:59:00,748 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-03-16 00:59:01,276 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-03-16 00:59:01,334 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-03-16 00:59:02,648 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-16 00:59:02,661 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-16 00:59:03,735 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-16 00:59:04,363 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-9090"]
+2022-03-16 00:59:04,445 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9090 (http) with context path ''
+2022-03-16 00:59:05,068 INFO com.OnlinePlantNurseryApplication [main] Started OnlinePlantNurseryApplication in 9.492 seconds (JVM running for 11.054)
+2022-03-16 00:59:13,486 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-9090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-16 00:59:13,486 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-03-16 00:59:13,488 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] Completed initialization in 2 ms
+2022-03-16 01:15:28,209 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-9090-exec-6] SQL Error: 0, SQLState: 23503
+2022-03-16 01:15:28,209 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-9090-exec-6] ERROR: update or delete on table "planter" violates foreign key constraint "fkhfyoaskb28sltbxq8jkuqev3v" on table "cartp"
+  Detail: Key (planterid)=(1) is still referenced from table "cartp".
+2022-03-16 01:15:28,212 INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-9090-exec-6] HHH000010: On release of batch it still contained JDBC statements
+2022-03-16 01:16:13,642 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-9090-exec-7] SQL Error: 0, SQLState: 23503
+2022-03-16 01:16:13,642 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-9090-exec-7] ERROR: update or delete on table "planter" violates foreign key constraint "fkhfyoaskb28sltbxq8jkuqev3v" on table "cartp"
+  Detail: Key (planterid)=(1) is still referenced from table "cartp".
+2022-03-16 01:16:13,642 INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-9090-exec-7] HHH000010: On release of batch it still contained JDBC statements
+2022-03-16 01:18:41,039 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(28)-127.0.0.1] Application shutdown requested.
+2022-03-16 01:18:41,081 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(28)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-16 01:18:41,085 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(28)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-03-16 01:18:41,089 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(28)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-03-16 01:18:55,477 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.2.Final
+2022-03-16 01:18:55,486 INFO com.OnlinePlantNurseryApplication [main] Starting OnlinePlantNurseryApplication using Java 17.0.1 on INLEN8520027119 with PID 1988 (C:\Users\HPATIL9\Downloads\OnlinePlantNursery\target\classes started by hpatil9 in C:\Users\HPATIL9\Downloads\OnlinePlantNursery)
+2022-03-16 01:18:55,487 INFO com.OnlinePlantNurseryApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-03-16 01:18:57,363 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-16 01:18:57,657 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 279 ms. Found 7 JPA repository interfaces.
+2022-03-16 01:18:58,475 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9090 (http)
+2022-03-16 01:18:58,488 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-9090"]
+2022-03-16 01:18:58,489 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-03-16 01:18:58,489 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-16 01:18:58,677 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-03-16 01:18:58,678 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3123 ms
+2022-03-16 01:18:58,932 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-16 01:18:59,019 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-16 01:18:59,250 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-16 01:18:59,416 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-03-16 01:18:59,886 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-03-16 01:18:59,937 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-03-16 01:19:01,145 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-16 01:19:01,158 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-16 01:19:02,127 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-16 01:19:02,711 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-9090"]
+2022-03-16 01:19:02,772 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9090 (http) with context path ''
+2022-03-16 01:19:03,351 INFO com.OnlinePlantNurseryApplication [main] Started OnlinePlantNurseryApplication in 8.377 seconds (JVM running for 9.807)
+2022-03-16 01:19:31,494 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-9090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-16 01:19:31,495 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-03-16 01:19:31,496 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] Completed initialization in 1 ms
+2022-03-16 01:21:40,423 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(12)-127.0.0.1] Application shutdown requested.
+2022-03-16 01:21:40,462 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(12)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-16 01:21:40,464 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(12)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-03-16 01:21:40,468 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(12)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-03-16 01:21:58,544 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.2.Final
+2022-03-16 01:21:58,553 INFO com.OnlinePlantNurseryApplication [main] Starting OnlinePlantNurseryApplication using Java 17.0.1 on INLEN8520027119 with PID 21664 (C:\Users\HPATIL9\Downloads\OnlinePlantNursery\target\classes started by hpatil9 in C:\Users\HPATIL9\Downloads\OnlinePlantNursery)
+2022-03-16 01:21:58,554 INFO com.OnlinePlantNurseryApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-03-16 01:22:00,360 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-16 01:22:00,625 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 251 ms. Found 7 JPA repository interfaces.
+2022-03-16 01:22:01,457 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9090 (http)
+2022-03-16 01:22:01,470 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-9090"]
+2022-03-16 01:22:01,471 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-03-16 01:22:01,471 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-16 01:22:01,649 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-03-16 01:22:01,650 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3030 ms
+2022-03-16 01:22:01,862 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-16 01:22:01,934 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-16 01:22:02,173 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-16 01:22:02,346 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-03-16 01:22:02,815 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-03-16 01:22:02,866 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-03-16 01:22:04,032 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-16 01:22:04,045 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-16 01:22:05,007 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-16 01:22:05,575 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-9090"]
+2022-03-16 01:22:05,629 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9090 (http) with context path ''
+2022-03-16 01:22:06,210 INFO com.OnlinePlantNurseryApplication [main] Started OnlinePlantNurseryApplication in 8.178 seconds (JVM running for 9.564)
+2022-03-16 01:25:28,658 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(11)-127.0.0.1] Application shutdown requested.
+2022-03-16 01:25:28,703 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(11)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-16 01:25:28,704 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(11)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-03-16 01:25:28,711 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(11)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-03-16 01:25:34,056 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.2.Final
+2022-03-16 01:25:34,062 INFO com.OnlinePlantNurseryApplication [main] Starting OnlinePlantNurseryApplication using Java 17.0.1 on INLEN8520027119 with PID 21864 (C:\Users\HPATIL9\Downloads\OnlinePlantNursery\target\classes started by hpatil9 in C:\Users\HPATIL9\Downloads\OnlinePlantNursery)
+2022-03-16 01:25:34,064 INFO com.OnlinePlantNurseryApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-03-16 01:25:35,907 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-16 01:25:36,204 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 281 ms. Found 7 JPA repository interfaces.
+2022-03-16 01:25:37,016 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9090 (http)
+2022-03-16 01:25:37,031 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-9090"]
+2022-03-16 01:25:37,032 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-03-16 01:25:37,033 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-16 01:25:37,221 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-03-16 01:25:37,222 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3090 ms
+2022-03-16 01:25:37,457 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-16 01:25:37,530 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-16 01:25:37,776 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-16 01:25:37,932 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-03-16 01:25:38,399 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-03-16 01:25:38,451 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-03-16 01:25:39,638 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-16 01:25:39,650 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-16 01:25:40,656 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-16 01:25:41,268 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-9090"]
+2022-03-16 01:25:41,314 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9090 (http) with context path ''
+2022-03-16 01:25:41,916 INFO com.OnlinePlantNurseryApplication [main] Started OnlinePlantNurseryApplication in 8.387 seconds (JVM running for 9.754)
+2022-03-16 01:26:08,181 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-9090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-16 01:26:08,181 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-03-16 01:26:08,183 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] Completed initialization in 2 ms
+2022-03-16 01:32:06,020 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(16)-127.0.0.1] Application shutdown requested.
+2022-03-16 01:32:06,058 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(16)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-16 01:32:06,060 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(16)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-03-16 01:32:06,064 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(16)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-03-16 01:32:11,385 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.2.Final
+2022-03-16 01:32:11,393 INFO com.OnlinePlantNurseryApplication [main] Starting OnlinePlantNurseryApplication using Java 17.0.1 on INLEN8520027119 with PID 4004 (C:\Users\HPATIL9\Downloads\OnlinePlantNursery\target\classes started by hpatil9 in C:\Users\HPATIL9\Downloads\OnlinePlantNursery)
+2022-03-16 01:32:11,395 INFO com.OnlinePlantNurseryApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-03-16 01:32:13,197 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-16 01:32:13,448 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 238 ms. Found 7 JPA repository interfaces.
+2022-03-16 01:32:14,253 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9090 (http)
+2022-03-16 01:32:14,266 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-9090"]
+2022-03-16 01:32:14,268 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-03-16 01:32:14,268 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-16 01:32:14,464 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-03-16 01:32:14,464 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3007 ms
+2022-03-16 01:32:14,695 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-16 01:32:14,772 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-16 01:32:15,007 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-16 01:32:15,169 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-03-16 01:32:15,635 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-03-16 01:32:15,680 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-03-16 01:32:16,840 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-16 01:32:16,853 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-16 01:32:17,778 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-16 01:32:18,365 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-9090"]
+2022-03-16 01:32:18,405 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9090 (http) with context path ''
+2022-03-16 01:32:18,974 INFO com.OnlinePlantNurseryApplication [main] Started OnlinePlantNurseryApplication in 8.087 seconds (JVM running for 9.485)
+2022-03-16 01:32:44,712 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-9090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-16 01:32:44,713 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-03-16 01:32:44,715 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] Completed initialization in 2 ms
+2022-03-16 01:32:44,861 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-9090-exec-1] SQL Error: 0, SQLState: 23503
+2022-03-16 01:32:44,862 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-9090-exec-1] ERROR: update or delete on table "planter" violates foreign key constraint "fkhfyoaskb28sltbxq8jkuqev3v" on table "cartp"
+  Detail: Key (planterid)=(1) is still referenced from table "cartp".
+2022-03-16 01:32:44,865 INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-9090-exec-1] HHH000010: On release of batch it still contained JDBC statements
+2022-03-16 01:33:34,962 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-9090-exec-2] SQL Error: 0, SQLState: 23503
+2022-03-16 01:33:34,962 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-9090-exec-2] ERROR: update or delete on table "planter" violates foreign key constraint "fkhfyoaskb28sltbxq8jkuqev3v" on table "cartp"
+  Detail: Key (planterid)=(1) is still referenced from table "cartp".
+2022-03-16 01:33:34,963 INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-9090-exec-2] HHH000010: On release of batch it still contained JDBC statements
+2022-03-16 01:33:59,584 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-9090-exec-5] SQL Error: 0, SQLState: 23503
+2022-03-16 01:33:59,585 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-9090-exec-5] ERROR: update or delete on table "planter" violates foreign key constraint "fkhfyoaskb28sltbxq8jkuqev3v" on table "cartp"
+  Detail: Key (planterid)=(1) is still referenced from table "cartp".
+2022-03-16 01:33:59,585 INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-9090-exec-5] HHH000010: On release of batch it still contained JDBC statements
+2022-03-16 01:37:40,366 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(11)-127.0.0.1] Application shutdown requested.
+2022-03-16 01:37:40,409 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(11)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-16 01:37:40,412 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(11)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-03-16 01:37:40,417 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(11)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2022-03-16 01:37:45,596 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.2.Final
+2022-03-16 01:37:45,602 INFO com.OnlinePlantNurseryApplication [main] Starting OnlinePlantNurseryApplication using Java 17.0.1 on INLEN8520027119 with PID 13168 (C:\Users\HPATIL9\Downloads\OnlinePlantNursery\target\classes started by hpatil9 in C:\Users\HPATIL9\Downloads\OnlinePlantNursery)
+2022-03-16 01:37:45,603 INFO com.OnlinePlantNurseryApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-03-16 01:37:47,505 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-16 01:38:01,900 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.2.Final
+2022-03-16 01:38:01,907 INFO com.OnlinePlantNurseryApplication [main] Starting OnlinePlantNurseryApplication using Java 17.0.1 on INLEN8520027119 with PID 22092 (C:\Users\HPATIL9\Downloads\OnlinePlantNursery\target\classes started by hpatil9 in C:\Users\HPATIL9\Downloads\OnlinePlantNursery)
+2022-03-16 01:38:01,908 INFO com.OnlinePlantNurseryApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-03-16 01:38:03,726 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-16 01:38:03,982 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 242 ms. Found 7 JPA repository interfaces.
+2022-03-16 01:38:04,841 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 9090 (http)
+2022-03-16 01:38:04,855 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-9090"]
+2022-03-16 01:38:04,856 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2022-03-16 01:38:04,857 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-16 01:38:05,051 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2022-03-16 01:38:05,051 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3077 ms
+2022-03-16 01:38:05,290 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-16 01:38:05,365 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-16 01:38:05,645 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-16 01:38:05,840 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-03-16 01:38:06,318 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-03-16 01:38:06,365 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-03-16 01:38:07,548 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-16 01:38:07,562 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-16 01:38:08,546 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-16 01:38:09,129 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-9090"]
+2022-03-16 01:38:09,178 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 9090 (http) with context path ''
+2022-03-16 01:38:09,751 INFO com.OnlinePlantNurseryApplication [main] Started OnlinePlantNurseryApplication in 8.357 seconds (JVM running for 9.743)
+2022-03-16 01:38:17,574 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-9090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-16 01:38:17,575 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-03-16 01:38:17,577 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-9090-exec-1] Completed initialization in 2 ms
+2022-03-16 01:38:28,339 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-9090-exec-8] SQL Error: 0, SQLState: 23503
+2022-03-16 01:38:28,340 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-9090-exec-8] ERROR: update or delete on table "planter" violates foreign key constraint "fkhfyoaskb28sltbxq8jkuqev3v" on table "cartp"
+  Detail: Key (planterid)=(1) is still referenced from table "cartp".
+2022-03-16 01:38:28,342 INFO org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl [http-nio-9090-exec-8] HHH000010: On release of batch it still contained JDBC statements
+2022-03-16 08:30:05,918 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h2m28s723ms741µs500ns).
+2022-03-16 09:13:24,581 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(103)-127.0.0.1] Application shutdown requested.
+2022-03-16 09:13:25,046 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(103)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-16 09:13:25,092 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(103)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2022-03-16 09:13:25,129 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(103)-127.0.0.1] HikariPool-1 - Shutdown completed.
